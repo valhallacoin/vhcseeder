@@ -29,7 +29,7 @@ set -ex
 
 # Default GOVERSION
 [[ ! "$GOVERSION" ]] && GOVERSION=1.11
-REPO=dcrseeder
+REPO=vhcseeder
 
 testrepo () {
   GO=go
@@ -82,11 +82,11 @@ if [ ! "$DOCKER" ]; then
 fi
 
 # use Travis cache with docker
-DOCKER_IMAGE_TAG=decred-golang-builder-$GOVERSION
-$DOCKER pull decred/$DOCKER_IMAGE_TAG
+DOCKER_IMAGE_TAG=valhallacoin-golang-builder-$GOVERSION
+$DOCKER pull valhallacoin/$DOCKER_IMAGE_TAG
 
-$DOCKER run --rm -it -v $(pwd):/src:Z decred/$DOCKER_IMAGE_TAG /bin/bash -c "\
+$DOCKER run --rm -it -v $(pwd):/src:Z valhallacoin/$DOCKER_IMAGE_TAG /bin/bash -c "\
   rsync -ra --filter=':- .gitignore'  \
-  /src/ /go/src/github.com/decred/$REPO/ && \
-  cd github.com/decred/$REPO/ && \
+  /src/ /go/src/github.com/valhallacoin/$REPO/ && \
+  cd github.com/valhallacoin/$REPO/ && \
   env GOVERSION=$GOVERSION GO111MODULE=on bash run_tests.sh"

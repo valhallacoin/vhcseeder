@@ -11,13 +11,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/vhcutil"
 	flags "github.com/jessevdk/go-flags"
 )
 
 const (
-	defaultConfigFilename = "dcrseeder.conf"
+	defaultConfigFilename = "vhcseeder.conf"
 	defaultListenPort     = "5354"
 )
 
@@ -27,7 +27,7 @@ var (
 
 	// Default configuration options
 	defaultConfigFile = filepath.Join(defaultHomeDir, defaultConfigFilename)
-	defaultHomeDir    = dcrutil.AppDataDir("dcrseeder", false)
+	defaultHomeDir    = vhcutil.AppDataDir("vhcseeder", false)
 )
 
 // config defines the configuration options for hardforkdemo.

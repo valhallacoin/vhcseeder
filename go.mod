@@ -1,11 +1,11 @@
-module github.com/decred/dcrseeder
+module github.com/valhallacoin/vhcseeder
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/decred/dcrd/chaincfg v1.1.1
-	github.com/decred/dcrd/dcrutil v1.1.1
-	github.com/decred/dcrd/peer v1.0.1
-	github.com/decred/dcrd/wire v1.1.0
+	github.com/valhallacoin/vhcd/chaincfg v1.1.1
+	github.com/valhallacoin/vhcd/vhcutil v1.1.1
+	github.com/valhallacoin/vhcd/peer v1.0.1
+	github.com/valhallacoin/vhcd/wire v1.1.0
 	github.com/fsnotify/fsnotify v1.4.7 // indirect
 	github.com/golang/protobuf v1.2.0 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect
