@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	flags "github.com/jessevdk/go-flags"
 	"github.com/valhallacoin/vhcd/chaincfg"
 	"github.com/valhallacoin/vhcd/vhcutil"
-	flags "github.com/jessevdk/go-flags"
 )
 
 const (

@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/valhallacoin/vhcd/wire"
 	"github.com/miekg/dns"
+	"github.com/valhallacoin/vhcd/wire"
 )
 
 type Node struct {

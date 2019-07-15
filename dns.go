@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/valhallacoin/vhcd/wire"
 	"github.com/miekg/dns"
+	"github.com/valhallacoin/vhcd/wire"
 )
 
 type DNSServer struct {
