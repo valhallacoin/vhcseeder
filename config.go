@@ -126,7 +126,7 @@ func loadConfig() (*config, error) {
 	cfg.Listen = normalizeAddress(cfg.Listen, defaultListenPort)
 
 	if cfg.TestNet {
-		activeNetParams = &chaincfg.TestNet3Params
+		activeNetParams = &chaincfg.TestNetParams
 	}
 
 	return &cfg, nil
