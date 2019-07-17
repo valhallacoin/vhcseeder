@@ -15,7 +15,7 @@ github.com/decred/slog
 github.com/jessevdk/go-flags
 # github.com/miekg/dns v1.1.15
 github.com/miekg/dns
-# github.com/valhallacoin/vhcd v0.0.0-20190716221354-cf780d5d2af5
+# github.com/valhallacoin/vhcd v0.0.0-20190717011153-12bed02e686d
 github.com/valhallacoin/vhcd/chaincfg
 github.com/valhallacoin/vhcd/peer
 github.com/valhallacoin/vhcd/vhcutil
